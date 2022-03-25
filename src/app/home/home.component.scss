@@ -1,0 +1,39 @@
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  margin-top: 100px;
+
+}
+.user {
+  width: 280px;
+  margin: 10px;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #202020;
+  box-shadow: 4px 3px 8px 0px rgb(200 152 44 / 22%);
+  transition-duration: 0.3s;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  &:hover {
+    box-shadow: 4px 3px 8px 0px rgb(200 152 44 / 46%);
+    transform: translate(-3px);
+  }
+
+  .userName {
+      color: #fff;
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 20px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+  }
+}
+

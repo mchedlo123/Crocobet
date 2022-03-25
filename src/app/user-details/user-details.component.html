@@ -1,0 +1,60 @@
+<div class="wrapper">
+    <div class="user-details" >
+      <h1>{{ data?.name }}</h1>
+      <div class="username info">
+        <h5>Username:</h5>
+        <span>{{ data?.username }}</span>
+      </div>
+      <div class="email info">
+        <h5>Email:</h5>
+        <span>{{ data?.email }}</span>
+      </div>
+      <div class="address info">
+        <h5>Address-City:</h5>
+        <span>{{ data?.address?.city}}</span>
+      </div>
+      <div class="latitude-longitude info">
+        <h5>Geo:</h5>
+        <span>{{ data?.address?.geo?.lat }}, {{ data?.address?.geo?.lng }} </span>
+      </div>
+      <div class="street info">
+        <h5>Street:</h5>
+        <span>{{ data?.address?.street }}</span>
+      </div>
+      <div class="suite info">
+        <h5>Suite:</h5>
+        <span>{{ data?.address?.suite }}</span>
+      </div>
+      <div class="zipcode info">
+        <h5>Zipcode:</h5>
+        <span>{{ data?.address?.zipcode }}</span>
+      </div>
+      <div class="company info">
+        <h5>Bs:</h5>
+        <span>{{ data?.company?.bs }}</span>
+      </div>
+      <div class="company-catchprase info">
+        <h5>CatchPrase:</h5>
+        <span>{{ data?.company?.catchPhrase }}</span>
+      </div>
+      <div class="company-name info">
+        <h5>Company Name:</h5>
+        <span>{{ data?.company?.name }}</span>
+      </div>
+      <div class="phone info">
+        <h5>Phone Number:</h5>
+        <span>{{ data?.phone }}</span>
+      </div>
+      <div class="website info">
+        <h5>Website:</h5>
+        <span>{{ data?.website }}</span>
+      </div>
+      <div class="button">
+        <button type="button" class="btn btn-secondary" (click)="getUserPosts(id)">User posts</button>
+      </div>
+    </div>
+</div>
+
+
+
+

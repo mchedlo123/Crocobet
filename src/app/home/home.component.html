@@ -1,0 +1,14 @@
+<div class="users">
+  <ng-container>
+    <div  class="user" *ngFor="let user of data" (click)="openUserDetails(user.id)">
+        <p class="userName">{{ user.name }}</p>
+    </div>
+  </ng-container>
+</div>
+
+
+
+
+
+
+
